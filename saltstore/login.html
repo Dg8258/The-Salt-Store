@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Salt Store-Sign in </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: rgb(148,139,139);
+background: linear-gradient(0deg, rgba(148,139,139,1) 0%, rgba(237,231,231,1) 100%);
+			margin: 0;
+			padding: 0;
+		}
+
+		.Full {
+			background: rgb(182,139,7);
+background: linear-gradient(0deg, rgba(182,139,7,1) 0%, rgba(236,203,11,1) 100%);
+			color: white;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.Top_nav {
+			background: rgb(41,103,30);
+background: linear-gradient(0deg, rgba(41,103,30,1) 0%, rgba(54,91,12,1) 100%);
+			overflow: hidden;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+		}
+
+		.Top_nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+            
+		}
+
+		.Top_nav a:hover {
+			background: rgb(148,139,139);
+background: linear-gradient(0deg, rgba(148,139,139,1) 0%, rgba(237,231,231,1) 100%);
+		}
+        .Top_nav .right .search_bar input[type="text"]{
+  border: 3px solid #666666;
+  padding: 5px 10px; 
+  outline: none;
+  transition: all 0.5s linear;
+  position:relative;
+  left: 10px;
+  top: 9px;
+  
+}
+
+.Top_nav .right .search_bar input[type="text"]:hover{
+  width: 200px;
+}
+
+.Top_nav .right{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 1100px;
+}
+.Top_nav .left{
+    display: flex;
+    justify-content: space-between;
+}
+
+    body {
+	font-family: Arial, sans-serif;
+	background-color:silver;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 60px;
+	background-color:grey;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+	color:black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: black;
+}
+
+label {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	color: black;
+}
+
+input[type="email"],
+input[type="password"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: black;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 20px;
+	color: black;
+	text-align: center;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover{
+    background: rgb(148,139,139);
+background: linear-gradient(0deg, rgba(148,139,139,1) 0%, rgba(237,231,231,1) 100%);
+		}
+
+
+</style>
+<header>
+    <div class="Top_nav">
+    <div class="left">
+        <a href="index.html">Home</a>
+        <a href="login.html">Sign In</a>
+        <a href="#">Cart</a>
+        <div class="right">
+        <div class="search_bar">
+            <input type="text" placeholder="Search">
+            
+        </div>
+        <a href="contact.html">Contact Us</a>
+        </div></div></div>
+<div class="Full">  
+    <h1>The Salt Store</h1>
+    <p>Buy Salt Online</p>
+    </div>
+</header>
+<br><br><br>
+<body>
+	<div class="container">
+		<h1>The Salt Store</h1>
+		<form action="login.php" method="POST">
+			<h2>Sign In</h2>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<input type="submit" value="Sign In">
+		</form>
+		<p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+	</div>
+</body>
+</html>

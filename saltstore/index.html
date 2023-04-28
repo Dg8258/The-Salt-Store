@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Salt Store </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: rgb(148,139,139);
+background: linear-gradient(0deg, rgba(148,139,139,1) 0%, rgba(237,231,231,1) 100%);
+			margin: 0;
+			padding: 0;
+		}
+
+		.Full {
+			background: rgb(182,139,7);
+background: linear-gradient(0deg, rgba(182,139,7,1) 0%, rgba(236,203,11,1) 100%);
+			color: white;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.Top_nav {
+			background: rgb(41,103,30);
+background: linear-gradient(0deg, rgba(41,103,30,1) 0%, rgba(54,91,12,1) 100%);
+			overflow: hidden;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+		}
+
+		.Top_nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+            
+		}
+
+		.Top_nav a:hover {
+			background: rgb(148,139,139);
+background: linear-gradient(0deg, rgba(148,139,139,1) 0%, rgba(237,231,231,1) 100%);
+		}
+        .Top_nav .right .search_bar input[type="text"]{
+  border: 3px solid #666666;
+  padding: 5px 10px; 
+  outline: none;
+  transition: all 0.5s linear;
+  position:relative;
+  left: 10px;
+  top: 9px;
+  
+}
+
+.Top_nav .right .search_bar input[type="text"]:hover{
+  width: 200px;
+}
+
+.Top_nav .right{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 1100px;
+}
+.Top_nav .left{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+
+		.product {
+			background-color: white;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			width: 200px;
+			margin: 20px;
+			padding: 20px;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.product:hover {
+			transform: translateY(-10px);
+			box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+		}
+
+		.product img {
+			width: 100%;
+			height: 100 px;
+			object-fit: cover;
+			margin-bottom: 10px;
+		}
+
+		.product h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		.product p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		button {
+			background-color: goldenrod;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+
+		button:hover {
+			background-color: maroon;
+		}
+		
+footer {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 5px 300px;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-4 {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: black;
+  background-color: burlywood ;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #666;
+}
+
+.fa {
+  font-size: 18px;
+}
+
+	</style>
+</head>
+	<header>
+        <div class="Top_nav">
+        <div class="left">
+            <a href="index.html">Home</a>
+            <a href="login.html">Sign In</a>
+            <a href="#">Cart</a>
+            <div class="right">
+            <div class="search_bar">
+                <input type="text" placeholder="Search">
+				
+            </div>
+            <a href="contact.html">Contact Us</a>
+            </div></div></div>
+    <div class="Full">  
+        <h1>The Salt Store</h1>
+        <p>Buy Salt Online</p>
+        </div>
+    </header>
+    
+    <body>
+    <section>
+        <div class="product">
+            <img src="1.jpeg" alt="Salt Product">
+            <h2>Ken Pride</h2>
+            <p>Rs 8</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="2.jpeg" alt="Salt Product">
+            <h2>Dandi Salt</h2>
+            <p>Rs 10</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="3.jpeg" alt="Salt Product">
+            <h2>Rock Salt</h2>
+            <p>Rs 50</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="4.jpeg" alt="Salt Product">
+            <h2>Refined Salt</h2>
+            <p>Rs 6</p>
+            <button>Add to Cart</button>
+        </div>
+		<footer>
+			<div class="container">
+			  <div class="row">
+				<div class="col-4">
+				  <h3>About Us</h3>
+				  <p>We are a leading supplier of premium quality salts, sourced from the best salt mines around the world.</p>
+				</div>
+				<div class="col-4">
+				  <h3>Contact Us</h3>
+				  <p>41 Warehouse Road</p>
+				  <p>Indore, MP, 452007</p>
+				  <p>Phone:9425059469</p>
+				  <p>Email: ramesh.salt3@gmail.com</p>
+				</div>
+				<div class="col-4">
+				  <h3>Follow Us</h3>
+				  <ul class="social-icons">
+					<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="footer-bottom">
+				<p>&copy; 2023 SaltStore. All Rights Reserved.</p>
+			  </div>
+			</div>
+			
+		  </footer>
+		  
+	
+	</body>
+		
+		  
+    
